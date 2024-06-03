@@ -1,1 +1,97 @@
-123
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .profile-info {
+            padding: 20px;
+        }
+
+        .profile-info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .profile-info h2 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #777;
+        }
+
+        .profile-info p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="profile.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1>你的名字</h1>
+                <h2>职业</h2>
+                <p>这是你的个人介绍。这段文字可以包含你的一些基本信息、兴趣爱好、技能以及你想与他人分享的任何内容。</p>
+                <button onclick="contactMe()">联系我</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function contactMe() {
+            alert("你可以通过电子邮件与我联系：your-email@example.com");
+        }
+    </script>
+</body>
+</html>
+
